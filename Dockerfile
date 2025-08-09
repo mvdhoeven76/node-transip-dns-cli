@@ -5,5 +5,5 @@ RUN npm ci --production
 COPY . .
 RUN chown -R node:node /home/node/
 USER node
-ENTRYPOINT [ "node", "cli.js" ]
+ENTRYPOINT [ "node", "bin/cli.js" ]
 CMD [ "" ]
